@@ -15,11 +15,11 @@ public interface CustomException {
     }
 
     class ErrorData {
-        private String message;
-        private String detail;
-        private String cause;
+        protected String message;
+        protected String detail;
+        protected String cause;
 
-        private ErrorData() {};
+        protected ErrorData() {};
 
         public static ErrorData build() {
             return new ErrorData();
