@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 public class ExceptionMapperTest {
     private ExceptionMapper em = new ExceptionMapper();
 
-    /*
     @Test
     public void testMappingOfNullPointerException() {
         assertEquals("\"npe\"", em.toResponse(new NullPointerException("npe")));
@@ -25,7 +24,6 @@ public class ExceptionMapperTest {
     public void testMappingOfCustomUncheckedException() {
         assertEquals("{\"message\":\"msg\",\"detail\":\"detail\",\"cause\":\"cause\"}", em.toResponse(new CustomUncheckedException()));
     }
-    */
 
     @Test
     public void testMappingOfExtendedUncheckedException() {
